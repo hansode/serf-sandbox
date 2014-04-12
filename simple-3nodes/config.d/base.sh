@@ -17,9 +17,9 @@ if [[ ! -f ${ifcfg_setup} ]]; then
 fi
 
 case "$(hostname)" in
-node01) ip=192.168.1.11 ;;
-node02) ip=192.168.1.12 ;;
-node03) ip=192.168.1.13 ;;
+  node01) ip=192.168.1.11 ;;
+  node02) ip=192.168.1.12 ;;
+  node03) ip=192.168.1.13 ;;
 esac
 
 ${ifcfg_setup} install ethernet eth1 ip=${ip}
